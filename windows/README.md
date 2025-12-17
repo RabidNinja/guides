@@ -5,16 +5,19 @@
   - `RETAIL channel` - reusable
   - `OEM_DM` - not reusable.
 ### 2. Find current windows key:
+#### Option A:
 - Type `regedit` in the windows search bar
 - Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`
 - The key is labed `BackupProductKeyDefault`
-    --------- OR -----------
-    - Download and run `ShowKeyPlus`
-3. Record the product key.
-4. Deactivate current key (Run both commands):
-    - `slmgr.vbs /upk`
-    - `slmgr.vbs /cpky`
-5. Activate windows on new PC: `slmgr.vbs /ipk YOUR_KEY_HERE`
+#### Option B:
+- Download and run `ShowKeyPlus`
+ 
+### 3. Record the product key.
+### 4. Deactivate current key (Run both commands):
+- `slmgr.vbs /upk`
+- `slmgr.vbs /cpky`
+
+### 5. Activate windows on new PC: `slmgr.vbs /ipk YOUR_KEY_HERE`
 
 
 ---
