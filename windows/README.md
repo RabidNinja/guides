@@ -16,67 +16,83 @@
     - `slmgr.vbs /cpky`
 5. Activate windows on new PC: `slmgr.vbs /ipk YOUR_KEY_HERE`
 
-How to Reuse a Windows Product Key
+# Reusing a Windows Product Key
 
-This guide explains how to check whether your Windows key is reusable and how to activate it on a new system.
+This document explains how to determine whether a Windows product key can be reused and how to transfer it to a new system.
 
-1. Check if the Key Is Reusable
+---
+
+## Requirements
+
+- Access to the original Windows system
+- Administrator privileges
+- The same Windows edition on both systems (Home → Home, Pro → Pro)
+
+---
+
+## 1. Verify That the Product Key Is Reusable
 
 On the original PC:
 
-Open Command Prompt (Admin)
+1. Open Command Prompt as Administrator
+2. Run:
+   slmgr /dli
 
-Run:
+### License Types
+- RETAIL channel — transferable to another system
+- OEM_DM — tied to the original motherboard and not transferable
 
-slmgr /dli
+---
 
-Expected Results
+## 2. Retrieve the Windows Product Key
 
-RETAIL channel → ✅ Key is reusable
+### Option A: Registry Method
 
-OEM_DM → ❌ Key is tied to the original motherboard and cannot be reused
+1. Press Win + R, type regedit, and press Enter
+2. Navigate to:
+   Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
+3. Copy the value named:
+   BackupProductKeyDefault
 
-2. Find the Current Windows Product Key
-Option A: Using the Registry
+### Option B: ShowKeyPlus (Recommended)
 
-Press Win + R, type regedit, and press Enter
+1. Download and run ShowKeyPlus
+2. Copy the displayed product key
 
-Navigate to:
+---
 
-Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform
+## 3. Save the Product Key
 
+Store the product key in a secure location before continuing.
 
-Locate:
+---
 
-BackupProductKeyDefault
+## 4. Remove the Product Key From the Original System
 
-Option B: Using a Tool (Recommended)
-
-Download and run ShowKeyPlus
-
-Copy the displayed Product Key
-
-3. Record the Product Key
-
-Save the key in a secure location before continuing.
-
-4. Deactivate the Key on the Original PC
-
-Run both commands in Command Prompt (Admin):
+On the original PC, open Command Prompt (Admin) and run:
 
 slmgr.vbs /upk
 slmgr.vbs /cpky
 
+---
 
-This removes the key from the old system.
-
-5. Activate Windows on the New PC
+## 5. Activate Windows on the New System
 
 On the new PC, open Command Prompt (Admin) and run:
 
-slmgr.vbs /ipk YOUR_PRODUCT_KEY_HERE
-
-
-Then activate Windows:
-
+slmgr.vbs /ipk YOUR-PRODUCT-KEY-HERE
 slmgr.vbs /ato
+
+---
+
+## Troubleshooting
+
+- Ensure the Windows edition matches the original system
+- Use Settings → System → Activation → Troubleshoot if activation fails
+- Contact Microsoft Support for retail licenses
+
+---
+
+## Disclaimer
+
+This guide is provided for educational purposes. License transfer eligibility is subject to Microsoft’s licensing terms.
