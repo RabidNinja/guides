@@ -8,11 +8,11 @@
 ### 2. Find current windows key:
 - I recommend doing both *just in case*.
   
-### Option A:
+#### Option A:
 - Type `regedit` in the windows search bar
 - Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`
 - The key is labed `BackupProductKeyDefault`
-### Option B:
+#### Option B:
 - Download and run `ShowKeyPlus`
  
 ### 3. Record the product key.
