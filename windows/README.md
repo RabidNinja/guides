@@ -4,7 +4,6 @@
 - On original PC: `slmgr -dli`
   - `RETAIL channel` - reusable
   - `OEM_DM` - not reusable.
-  - 
 ### 2. Find current windows key:
 I recommend doing both *just in case*.
   
