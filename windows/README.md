@@ -4,9 +4,9 @@
 - On original PC: `slmgr -dli`
   - `RETAIL channel` - reusable
   - `OEM_DM` - not reusable.
+---
 ### 2. Find current windows key:
 I recommend doing both *just in case*.
-  
 - Option A:
   - Type `regedit` in the windows search bar
   - Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`
