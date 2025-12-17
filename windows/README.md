@@ -8,7 +8,7 @@
     - Type `regedit` in the windows search bar
     - Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`
     - The key is labed `BackupProductKeyDefault`
-        - OR
+        - --------- OR -----------
     - Download and run `ShowKeyPlus`
 3. Record the product key.
 4. Deactivate current key (Run both commands):
