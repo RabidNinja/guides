@@ -1,6 +1,6 @@
 # How to reuse windows key
 
-1. Check if the key is reusable:
+## 1. Check if the key is reusable
     - On original PC: `slmgr -dli`
         - `RETAIL channel` = reusable
         - `OEM_DM` = not reusable.
