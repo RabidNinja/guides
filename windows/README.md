@@ -2,8 +2,8 @@
 
 1. Check if the key is reusable:
     - On original PC: `slmgr -dli`
-        - Should show `RETAIL channel`
-        - If it shows `OEM_DM`, that copy of windows is not reusable.
+        - `RETAIL channel` = reusable
+        - `OEM_DM` = not reusable.
 2. Find current windows key:
     - Type `regedit` in the windows search bar
     - Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`
@@ -15,3 +15,4 @@
     - `slmgr.vbs /upk`
     - `slmgr.vbs /cpky`
 5. Activate windows on new PC: `slmgr.vbs /ipk YOUR_KEY_HERE`
+
