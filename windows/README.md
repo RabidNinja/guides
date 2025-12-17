@@ -8,7 +8,7 @@
     - Type `regedit` in the windows search bar
     - Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`
     - The key is labed `BackupProductKeyDefault`
-4. Deactivate current key: `slmgr.vbs /upk`
-5. Clear the product key from the Windows Registry: `slmgr.vbs /cpky`
-    - This protects it from being accessed by key finder programs or malicious tools.
-6. On new computer: `slmgr.vbs /ipk YOUR_KEY_HERE`
+4. Deactivate current key (Run both commands):
+    - `slmgr.vbs /upk`
+    - `slmgr.vbs /cpky`
+5. On new computer: `slmgr.vbs /ipk YOUR_KEY_HERE`
