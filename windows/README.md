@@ -17,4 +17,5 @@
 - `slmgr.vbs /upk`
 - `slmgr.vbs /cpky`
 
-### 5. Activate windows on new PC: `slmgr.vbs /ipk YOUR_KEY_HERE`
+### 5. Activate windows on new PC: 
+- `slmgr.vbs /ipk YOUR_KEY_HERE`
