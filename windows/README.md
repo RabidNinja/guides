@@ -10,9 +10,9 @@ I recommend doing both *just in case*.
 - Option A:
   - Download and run `ShowKeyPlus`
 - Option B:
-  - Type `regedit` in the windows search bar
-  - Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`
-  - The key is labed `BackupProductKeyDefault`
+  1. Type `regedit` in the windows search bar
+  2. Navigate to `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SoftwareProtectionPlatform`
+  3. The key is labed `BackupProductKeyDefault`
  
 ### 3. Record the product key.
 
